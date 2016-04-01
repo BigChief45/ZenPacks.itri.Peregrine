@@ -1,1 +1,40 @@
 name: ZenPacks.itri.Peregrine
+
+zProperties:
+   DEFAULTS:
+      category: Peregrine
+      
+   zPeregrinePort:
+      type: string
+      default: "8282"
+
+device_classes:
+   /OpenStack/Peregrine:
+      remove: true
+      zProperties:
+         zPythonClass: ZenPacks.itri.Peregrine.PeregrineDevice
+         zPingMonitorIgnore: true
+         zSnmpMonitorIgnore: true
+         zCollectorPlugins:
+            - itri.Peregrine.Services
+
+classes:
+   PeregrineDevice:
+      base: [zenpacklib.Device]
+      label: Peregrine Device
+      
+   PeregrineService:
+      base: [zenpacklib.Component]
+      label: Peregrine Service
+      order: 1
+      properties:
+         agent:
+            label: Agent
+            order: 1
+         status:
+            label: Status
+            label_width: 40
+            order: 2
+            
+class_relationships:
+   - PeregrineDevice 1:MC PeregrineService
