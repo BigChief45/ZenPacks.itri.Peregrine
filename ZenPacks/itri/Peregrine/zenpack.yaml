@@ -8,6 +8,13 @@ zProperties:
       type: string
       default: "8282"
 
+   zPeregrineUser:
+      type: string
+      default: "admin"
+
+   zPeregrinePassword:
+      type: password
+
 device_classes:
    /OpenStack/Peregrine:
       remove: true
