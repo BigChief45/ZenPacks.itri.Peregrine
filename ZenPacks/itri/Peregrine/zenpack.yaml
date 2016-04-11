@@ -23,7 +23,7 @@ device_classes:
          zPingMonitorIgnore: true
          zSnmpMonitorIgnore: true
          zCollectorPlugins:
-            - itri.Peregrine.Services
+            - itri.peregrine.Services
 
 classes:
    PeregrineDevice:
