@@ -35,13 +35,10 @@ classes:
       label: Peregrine Service
       order: 1
       properties:
-         agent:
-            label: Agent
-            order: 1
          status:
             label: Status
             label_width: 40
-            order: 2
+            order: 1
             
 class_relationships:
    - PeregrineDevice 1:MC PeregrineService
