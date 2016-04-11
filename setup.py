@@ -4,7 +4,7 @@
 # NB: PACKAGES is deprecated
 NAME = "ZenPacks.itri.Peregrine"
 VERSION = "1.0.0dev"
-AUTHOR = "Your Name Here"
+AUTHOR = "Jaime Alvarez (jalvarez@itri.org.tw)"
 LICENSE = ""
 NAMESPACE_PACKAGES = ['ZenPacks', 'ZenPacks.itri']
 PACKAGES = ['ZenPacks', 'ZenPacks.itri', 'ZenPacks.itri.Peregrine']
